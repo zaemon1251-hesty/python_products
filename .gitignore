@@ -1,0 +1,8 @@
+#学習済みモデル
+*.pt
+
+#写真
+static/
+
+#vscode情報は要らない
+.vscode/
