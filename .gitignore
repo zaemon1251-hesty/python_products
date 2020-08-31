@@ -3,3 +3,6 @@
 
 #写真
 static/
+
+#vscode情報は要らない
+.vscode/
