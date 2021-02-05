@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'kakeibo',
     'bootstrap4',
     'cms',
-    'sns'
+    'sns',
 ]
 
 MIDDLEWARE = [
