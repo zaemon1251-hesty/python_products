@@ -1,6 +1,8 @@
 #学習済みモデル
 #*.pt
 
+#Database
+*.sqlite3
 #写真
 static/
 
@@ -8,6 +10,7 @@ static/
 .vscode/
 
 #環境はvenvにて作成したが、gitでは管理しない
+
 venv/
 
 __pycache__/
