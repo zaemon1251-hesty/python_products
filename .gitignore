@@ -2,7 +2,7 @@
 #*.pt
 
 #Database
-*.sqlite3
+db.sqlite3
 #写真
 static/
 
