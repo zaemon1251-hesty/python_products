@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request  #, redirect, url_for, abort
-
+# This Python file uses the following encoding: unicode
 # PyTorch関連
 import numpy as np
 import torch
@@ -43,6 +43,9 @@ def upload_file():
         # 画像ファイルを読み込む
         image = Image.open(filepath)
         image_tensor = transforms.functional.to_tensor(image)
+        if image_tensor.shape[0]>3:
+            image_tensor=image_tensor[1:4]
+
         output = model([image_tensor])[0]
 
         masks = None
