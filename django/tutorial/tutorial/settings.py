@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'kakeibo',
-    'bootstrapform',
+    'bootstrap4',
     'cms',
     'sns'
 ]
