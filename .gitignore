@@ -20,3 +20,5 @@ migrations/
 .DS_Store
 
 local_settings.py
+
+staticfiles/
