@@ -136,7 +136,7 @@ STATIC_URL = '/static/'
 
 #追加
 if not DEBUG:
-    SECRET_KEY = os.environ['SECRET_KEY']
+    SECRET_KEY = os.getenv('SECRET_KEY')
     import django_heroku
     # Activate Django-Heroku.
     django_heroku.settings(locals())
