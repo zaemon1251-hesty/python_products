@@ -16,9 +16,9 @@ class ManagerTest(DjangoTest):
     def setUp(self):
         fdate = timezone.now()
         Category.objects.bulk_create([
-            Category(category_name="食費"),
-            Category(category_name="交通費"),
-            Category(category_name="雑費")
+            Category(category_name="food"),
+            Category(category_name="transport"),
+            Category(category_name="others")
         ])
         meal = Category.objects.get(category_name="食費")
         trans = Category.objects.get(category_name="交通費")
