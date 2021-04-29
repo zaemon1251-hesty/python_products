@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>コネクトフォー</title>
+    </head>
+    <body>
+        
+        <form action = "./" method = "POST">
+           <p>
+            {% if your_turn %}
+            あなたの番です
+            {% else %}
+            AIの番です
+            {% endif %}
+           </p>
+           <p>
+            列を選択：
+           <input type="radio" name="col" value="0">
+           <input type="radio" name="col" value="1">
+           <input type="radio" name="col" value="2">
+           <input type="radio" name="col" value="3">
+           <input type="radio" name="col" value="4">
+           <input type="radio" name="col" value="5">
+           <input type="radio" name="col" value="6">
+           </p>
+           <input type = "submit"/>
+        </form>
+        <table>
+            {% for row in statements %}
+            <tr>
+            {% for item in row %}
+            <td>{{item}}</td>
+            {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+     </body>
+</html>
