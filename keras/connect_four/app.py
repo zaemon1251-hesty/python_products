@@ -44,7 +44,8 @@ class BrowsPlay:
         if self.state.is_done():
             self.state = State()
             redirect(url_for("done"))
-
+            
+        
         # 行動の取得
         action = self.next_action(self.state)
 
@@ -59,9 +60,15 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def main():
     if request.method == "GET":
+        if self.state.is_done():
+            self.state = State()
+            redirect(url_for("done"))
         return render_template("index.html", your_turn = bp.state.is_first_player(), statements = bp.state.get_state())
     
     if request.method == "POST":
+        if self.state.is_done():
+            self.state = State()
+            redirect(url_for("done"))
         
         if request.form["col"]:
             action = int(request.form["col"])
