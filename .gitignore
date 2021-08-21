@@ -12,6 +12,7 @@ static/
 #環境はvenvにて作成したが、gitでは管理しない
 
 venv/
+.env/
 
 __pycache__/
 
@@ -22,3 +23,5 @@ migrations/
 local_settings.py
 
 staticfiles/
+
+out.html
