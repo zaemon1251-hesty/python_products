@@ -1,0 +1,7 @@
+- keras
+    - connect_four : flask & kerasでコネクトフォーというボードゲームをwebブラウザ�でコンピュータと対戦できるようにしました。
+- pytorch
+    - Digit : flask & pytorchで手書き数字画像を認識するアプリ
+    - Mask-RCNN : flask & pytorchで顔を認識して黒塗りするアプリ
+- responder : docker & responderを使ったwebAppサンプル
+- psycopg : 改修中
